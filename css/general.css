@@ -187,6 +187,10 @@ footer a {
   cursor: pointer;
   border-radius: 9999px;
   margin-right: 1em;
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+
 }
 
 [role="switch"]::before {
