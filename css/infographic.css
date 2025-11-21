@@ -1,0 +1,122 @@
+#head-txt {
+  fill: rgb(54, 54, 54);
+}
+
+.info-graphic,
+.info-text {
+  background-color: var(--color-info-bg);
+  padding: 20px 0;
+}
+
+.info-graphic {
+  border-radius: 0;
+  margin: 60px auto 80px auto;
+  width: 60%;
+  height: 60%;
+}
+
+.info-text {
+  width: 90%;
+  height: 90%;
+
+}
+
+.info-text h2 {
+  line-height: 3rem;
+  text-align: center;
+  background-color: var(--color-headline-bg);
+  color: var(--color-headline-text-page);
+  margin-bottom: 1rem;
+  font-family: "Cinzel";
+}
+
+.info-text>*:not(:first-child) {
+  margin: 0 clamp(1rem, 10%, 7rem);
+}
+
+.info-text p {
+  font-size: 0.8rem;
+  line-height: 1.3;
+  margin: 0 0 1.2rem 0;
+  padding: 0;
+}
+
+.info-box {
+  padding: 1.1rem 1rem 1.2rem 1rem;
+  background-color: var(--color-infobox-1-bg);
+}
+
+#efficiency {
+
+  font-size: 1.2em;
+}
+
+.info-box:nth-of-type(2n) {
+  background-color: var(--color-infobox-2-bg);
+}
+
+
+/*Hotspot stylings*/
+.sweater {
+  transition: transform 0.3s;
+  transform-origin: center center;
+  transform: scale(1.10);
+  outline: solid red 2px;
+}
+
+.Necklace {
+  transition: transform 0.3s;
+  transform-origin: center center;
+}
+
+.Necklace:hover {
+  transform: scale(1.10);
+  outline: red solid 2px;
+
+}
+
+/*.pants {
+  transition: transform 0.3s;
+  transform-origin: center center;
+}
+
+.pants:hover {
+  transform: scale(1.10);
+  outline: solid red 2px;
+
+}*/
+
+.moon {
+  transition: transform 0.3s, translate 0.3s;
+  transform-origin: center center;
+  transform: scale(1.20) translateY(60px);
+  outline: solid red 2px;
+}
+
+
+
+/*Slut med at hotspots stylings*/
+
+/*Til knapperne*/
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-group button {
+  flex: 1 1 0;
+  margin: 0 0.5rem;
+  padding: 0.4em 1.2em;
+  background-color: var(--color-button-bg, #c9c9c9);
+  color: var(--color-button-text, #333);
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+.button-group button:hover {
+  background-color: var(--color-button-hover-bg, #ccc);
+}

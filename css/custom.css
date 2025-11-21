@@ -1,0 +1,135 @@
+:root {
+  /* Tilføj blod rundt omkring på siden når dark mode*/
+
+  /* Colours */
+  --color-bg: #FCEB94;
+  /* page background */
+  --color-head-bg: #ff4b00;
+
+  /* Logotype */
+  --color-logotype-bg: #000000;
+  --color-text-logotype: #fffae2;
+  --font-logotype-size: 1rem;
+
+  /* Global menu */
+  --color-menu-bg: #6f90EB;
+  /* Links */
+  --color-link-bg: #FCEB94;
+  --color-link-hover: #f8cf00;
+  /* used */
+  --color-link-active: #6f90eb;
+  /* used */
+  --border-radius-links: 1px;
+
+  /* Headlines og rubrik */
+  --font-h1-size: 3rem;
+  --font-h1-family: Impact, sans-serif;
+  --font-sub1-size: 2rem;
+  --font-h2-size: 1rem;
+  --font-h3-size: 1rem;
+  --color-headline-bg: #000000;
+  --color-headline-text-page: #FFFAE2;
+
+  /* Tekst */
+  --color-text: #000000;
+  --color-text-inverted: #FCEB94;
+
+  /*  Marginer */
+  --margin-head-bottom: 5px;
+
+  /* Borders */
+  --border-radius: 5px;
+
+  /* Cards */
+  --color-card-bg: #ffffff;
+  --color-cta-card-bg: #FF4B00;
+  /* news-cards */
+  --color-news-bg: #FFFAE2;
+  --color-news-bg-inverted: #DBE2F5;
+  --color-cta-newscard-bg: #FFA680;
+  --color-cta-newscard-bg-inverted: #6F90EB;
+
+  /* Fonts */
+  --font-family-sans: ui-sans-serif;
+  /* --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700; */
+
+  /* Text sizes */
+  --logotype-size: 1rem;
+  --headline1-size: 2rem;
+  --headline2-size: 1rem;
+  --headline3-size: 1rem;
+  --bodytext-size: 1rem;
+  --cta-text-size: 1rem;
+  --followup-text-size: 1rem;
+  --form-submit-size: 1rem;
+
+  /* Infographics */
+  --color-info-bg: #ffffff;
+  --color-infobox-1-bg: #FCEB94;
+  --color-infobox-2-bg: #DEF5DB;
+
+  /* til forms */
+  --info-background-color: #ddc6a7;
+  --forms-text-background: #fff4df;
+}
+
+
+/* --- DARK MODE OVERRIDES --- */
+/*html {
+  color-scheme: light;
+
+  --color-heading: light-dark(#5000ca, #e0d3ff);*/
+/* dark: #e0d3ff */
+
+/*--color-text: light-dark(#555, #cdc7dc);*/
+/* dark: #cdc7dc */
+/*--color-bg: light-dark(#fff, #222);*/
+/* dark: #222 */
+
+/*
+  --color-heading: light-dark(#5000ca,#e0d3ff); 
+  --color-text: light-dark(#555, #cdc7dc); 
+  --color-bg: light-dark(#fff, #222); */
+
+/*color: var(--color-text);
+  background-color: var(--color-bg);
+}*/
+
+
+html.dark {
+  color-scheme: dark;
+
+  /* Override variables for dark mode */
+  --color-bg: #222;
+  --color-text: #cdc7dc;
+  --color-heading: #e0d3ff;
+  /* You can add more overrides below as needed */
+  --color-head-bg: #5e0000;
+  --color-logotype-bg: #161616;
+  --color-text-logotype: #e0d3ff;
+  --color-menu-bg: #3a4a7f;
+  --color-link-bg: #161616;
+  --color-link-hover: #e0d3ff;
+  --color-link-active: #3a4a7f;
+  --color-headline-bg: #161616;
+  --color-headline-text-page: #e0d3ff;
+  --color-card-bg: #333;
+  --color-cta-card-bg: #5e0000;
+  --color-news-bg: #381313;
+  --color-news-bg-inverted: #333;
+  --color-cta-newscard-bg: #5e0000;
+  --color-cta-newscard-bg-inverted: #3a4a7f;
+  --color-info-bg: #333;
+  --color-infobox-1-bg: #222;
+  --color-infobox-2-bg: #5e0000;
+  --info-background-color: #444;
+  --forms-text-background: #5c5955;
+
+}
+
+h1 {
+  color: var(--color-heading);
+}

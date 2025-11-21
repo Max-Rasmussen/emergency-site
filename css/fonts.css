@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/Rubik-VariableFont_wght.woff2") format("woff2-variations"),
+    url("/fonts/Rubik-Regular.woff") format("woff");
+  font-weight: 300 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "London";
+  src: url("../fonts/OldLondon.ttf");
+}
+
+@font-face {
+  font-family: "Cinzel";
+  src: url("../fonts/CinzelDecorative-Regular.ttf");
+}
+
+/*Til food*/
+@font-face {
+  font-family: "Calson";
+  src: url("../fonts/Big\ Caslon\ Medium.ttf");
+}
