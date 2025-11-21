@@ -4,7 +4,6 @@
 
 .info-graphic,
 .info-text {
-  background-color: var(--color-info-bg);
   padding: 20px 0;
 }
 
@@ -13,12 +12,13 @@
   margin: 60px auto 80px auto;
   width: 60%;
   height: 60%;
+  background-color: #3A3B3A;
 }
 
 .info-text {
   width: 90%;
   height: 90%;
-
+  background-color: var(--color-news-bg);
 }
 
 .info-text h2 {
