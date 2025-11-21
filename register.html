@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/custom.css" />
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="css/general.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/burger.css" />
+  <link rel="stylesheet" href="css/cards.css" />
+  <link rel="stylesheet" href="css/forms.css" />
+  <link rel="icon" type="image/png" href="img/littlelogo.jpg" />
+  <title>Emergency Site</title>
+</head>
+
+<body id="register">
+  <header>
+    <nav>
+      <div id="logotype-wrapper" class="logo">
+        <a href="index.html"><img class="logosvg" src="img/logo.svg" alt=""></a>
+      </div>
+      <ul class="menu">
+        <li><a class="menuItem" href="instruction.html">VIGTIG VIDEN</a></li>
+        <li><a class="menuItem" href="register.html">SET EN VAMPYR?</a></li>
+        <li><input id="darkmodeknap" role="switch" type="checkbox"> </li>
+      </ul>
+      <button class="burger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <h1>INDBERET VAMPYRE</h1>
+    <section id="form-section">
+      <article id="form-info">
+        <h2>Set en vampyr?</h2>
+        <p>Indberedt info her og vi investigere sagen.</p>
+      </article>
+      <form id="webform">
+        <div class="form-group">
+          <label for="first_name">Dit navn</label>
+          <input type="text" id="first_name" name="first_name" aria-describedby="fname-error" required />
+          <p class="error-message" id="fname-error">Udfyld feltet!</p>
+        </div>
+
+        <div class="form-group">
+          <label for="last_name">Telefonnummer for yderligere information</label>
+          <input type="text" id="last_name" name="last_name" aria-describedby="lname-error" />
+          <!-- <p class="error-message" id="lname-error">Udfyld feltet!</p> -->
+        </div>
+
+        <div class="form-group">
+          <label for="email">Lokation</label>
+          <input type="text" id="email" name="email" aria-describedby="email-error" required />
+          <p class="error-message" id="email-error">Udfyld feltet!</p>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Hvad så du præcist? Gå gerne i detaljer!</label>
+          <input type="text" id="password" name="password" aria-describedby="password-instruction password-error"
+            required />
+          <p class="error-message" id="password-error">Udfyld feltet!</p>
+        </div>
+
+        <div class="form-group">
+          <label for="accept_terms">
+            <input type="checkbox" id="accept_terms" name="accept_terms" value="Ja" aria-describedby="terms-error" />
+            Føler du dig i fare på grund af denne viden?
+          </label>
+          <!--<p class="error-message" id="terms-error">Please tick the box</p> -->
+        </div>
+
+        <div class="form-group">
+          <label for="beskyttelse">
+            <input type="checkbox" id="beskyttelse" name="beskyttelse" value="Ja" aria-describedby="terms-error" />
+            Har du brug for beskyttelse?
+          </label>
+          <!--<p class="error-message" id="terms-error">Please tick the box</p> -->
+        </div>
+        <div class="form-group">
+          <label for="blod">
+            <input type="checkbox" id="blod" name="blod" value="Ja" aria-describedby="terms-error" />
+            Vil du melde dig til vores nyhedsbrev?
+          </label>
+          <!-- <p class="error-message" id="terms-error">Please tick the box</p>-->
+        </div>
+
+        <button>Send formular</button>
+      </form>
+    </section>
+
+
+    <section class="output" id="summary">
+
+      <h2>Dataindsamling</h2>
+      <details>
+        <summary id="visdata">Vis data</summary>
+        <p>Navn: <span id="first_name_output"></span></p>
+        <p>Telefonnummer: <span id="last_name_output"></span></p>
+        <p>Lokation: <span id="email_output"></span></p>
+        <p class="langtext">Hvad så du?: <span id="password_output"></span></p>
+        <p>Føler du dig i fare?: <span id="terms_output"></span></p>
+        <p>Har du brug for beskyttelse?: <span id="beskyttelse_output"></span></p>
+        <p>Nyhedsbrev?: <span id="blod_output"></span></p>
+      </details>
+    </section>
+  </main>
+
+
+
+
+
+
+  <footer>
+
+
+    <nav class="some">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+    <nav class="another">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+    <nav class="yetanother">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+  </footer>
+  <script src="js/forms.js"></script>
+  <script src="js/burger.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
